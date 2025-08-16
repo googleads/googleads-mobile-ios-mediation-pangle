@@ -25,19 +25,27 @@ let package = Package(
       targets: ["PangleAdapterTarget"]
     )
   ],
+  dependencies: [
+    .package(
+      name: "PangleSDK",
+      url: "https://github.com/bytedance/AdsGlobalPackage.git",
+      from: "7.4.1-release.1"
+    )
+  ],
   targets: [
     .target(
       name: "PangleAdapterTarget",
       dependencies: [
-        .target(name: "Adapter"),
+        .target(name: "PangleAdapter"),
+        .product(name: "AdsGlobalPackage", package: "PangleSDK"),,
       ],
       path: "PangleAdapterTarget"
     ),
     .binaryTarget(
-      name: "Adapter",
+      name: "PangleAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/pangle/PangleAdapter-7.4.1.0.0.zip",
-      checksum: ""
+      checksum: "8f8a1a8b999f6ea6993c353eaa01f68da97f82badf3949825d3856adda507ea1"
     ),
   ]
 )
