@@ -37,7 +37,7 @@ let package = Package(
       name: "PangleAdapterTarget",
       dependencies: [
         .target(name: "PangleAdapter"),
-        .product(name: "AdsGlobalPackage", package: "PangleSDK"),,
+        .product(name: "AdsGlobalPackage", package: "PangleSDK")
       ],
       path: "PangleAdapterTarget"
     ),
