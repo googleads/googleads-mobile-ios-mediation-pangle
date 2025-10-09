@@ -29,7 +29,7 @@ let package = Package(
     .package(
       name: "PangleSDK",
       url: "https://github.com/bytedance/AdsGlobalPackage.git",
-      from: "7.4.1-release.1"
+      exact: "7.6.0-release.6"
     )
   ],
   targets: [
@@ -44,8 +44,8 @@ let package = Package(
     .binaryTarget(
       name: "PangleAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/pangle/PangleAdapter-7.4.1.1.0.zip",
-      checksum: "da138a5ef54415a1cbeb70ee96d409bf5b970ccf088e3f06b81138b124c1e2cb"
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/pangle/PangleAdapter-7.6.0.6.0.zip",
+      checksum: "3f7248d2582b75cc1856d8b824c55d51c154ac326a6f5d0ac4969c07869fd1d8"
     ),
   ]
 )
