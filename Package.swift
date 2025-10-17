@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.6
 
 // Copyright 2025 Google LLC.
 //
@@ -27,7 +27,6 @@ let package = Package(
   ],
   dependencies: [
     .package(
-      name: "PangleSDK",
       url: "https://github.com/bytedance/AdsGlobalPackage.git",
       exact: "7.6.0-release.6"
     )
@@ -37,7 +36,7 @@ let package = Package(
       name: "PangleAdapterTarget",
       dependencies: [
         .target(name: "PangleAdapter"),
-        .product(name: "AdsGlobalPackage", package: "PangleSDK")
+        .product(name: "PangleSDK", package: "AdsGlobalPackage")
       ],
       path: "PangleAdapterTarget"
     ),
