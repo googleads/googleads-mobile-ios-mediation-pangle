@@ -29,14 +29,19 @@ let package = Package(
     .package(
       url: "https://github.com/bytedance/AdsGlobalPackage.git",
       exact: "7.6.0-release.6"
-    )
+    ),
+    .package(
+      url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
+      from: "12.0.0"
+    ),
   ],
   targets: [
     .target(
       name: "PangleAdapterTarget",
       dependencies: [
         .target(name: "PangleAdapter"),
-        .product(name: "AdsGlobalPackage", package: "AdsGlobalPackage")
+        .product(name: "AdsGlobalPackage", package: "AdsGlobalPackage"),
+        .product(name: "GoogleMobileAds", package: "swift-package-manager-google-mobile-ads"),
       ],
       path: "PangleAdapterTarget"
     ),
