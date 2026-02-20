@@ -18,7 +18,7 @@ import PackageDescription
 
 let package = Package(
   name: "PangleAdapter",
-  platforms: [.iOS(.v12)],
+  platforms: [.iOS(.v13)],
   products: [
     .library(
       name: "PangleAdapterTarget",
@@ -28,12 +28,12 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/bytedance/AdsGlobalPackage.git",
-      exact: "7.6.0-release.6"
+      exact: "7.9.0-release.6"
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
-      from: "12.0.0"
-    ),
+      from: "13.0.0"
+    )
   ],
   targets: [
     .target(
@@ -48,8 +48,8 @@ let package = Package(
     .binaryTarget(
       name: "PangleAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/pangle/PangleAdapter-7.6.0.6.0.zip",
-      checksum: "3f7248d2582b75cc1856d8b824c55d51c154ac326a6f5d0ac4969c07869fd1d8"
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/pangle/PangleAdapter-7.9.0.6.0.zip",
+      checksum: "4a18c3727955d3088b9d0afdb9744e0c82258e46d0aea721ecb2684f588d519b"
     ),
   ]
 )
