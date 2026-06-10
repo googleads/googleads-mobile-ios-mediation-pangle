@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "PangleAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/pangle/PangleAdapter-7.9.1.1.1.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/pangle/PangleAdapter-8.1.0.6.0.zip",
       checksum: "c5e706c603c688041608f47ed1e28a9c7df88c65e38873d5d2f1604a74b856ca"
     ),
   ]
