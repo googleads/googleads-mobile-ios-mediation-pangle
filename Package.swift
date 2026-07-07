@@ -28,7 +28,7 @@ let package = Package(
   dependencies: [
     .package(
       url: "https://github.com/bytedance/AdsGlobalPackage.git",
-      exact: "8.2.0-beta.3"
+      exact: "8.1.1-release.1"
     ),
     .package(
       url: "https://github.com/googleads/swift-package-manager-google-mobile-ads.git",
@@ -48,7 +48,7 @@ let package = Package(
     .binaryTarget(
       name: "PangleAdapter",
       url:
-        "https://dl.google.com/googleadmobadssdk/mediation/ios/pangle/PangleAdapter-8.2.0.3.0.zip",
+        "https://dl.google.com/googleadmobadssdk/mediation/ios/pangle/PangleAdapter-8.1.1.1.0.zip",
       checksum: "1f8a013d241c05909d8be553664f3c300fbc050e8ce1ad94f4cfbbfb724b8696"
     ),
   ]
