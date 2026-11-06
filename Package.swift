@@ -49,7 +49,7 @@ let package = Package(
       name: "PangleAdapter",
       url:
         "https://dl.google.com/googleadmobadssdk/mediation/ios/pangle/PangleAdapter-8.4.0.7.0.zip",
-      checksum: "6e38ff6c8a053a74ec96ae2b34fd744ef2a33a7ebc28987f8dc655b94d51c5b8"
+      checksum: "f01f0889fb6cd76fbfd736df8d274db831a4013a02069305959fa24b4a738b80"
     ),
   ]
 )
